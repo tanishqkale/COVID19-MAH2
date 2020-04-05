@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">COVID19-MAH</string>
+    <string name="title_activity_frontend">FrontendActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Covid19-MAH</string>
+    <string name="nav_header_subtitle">#CoronaHaregaIndiaJeetega</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+    <string name="covid19_maharashtra">COVID19_MAHARASHTRA</string>
+    <string name="coronaharegaindiajeetega" />
+    <string name="symptoms" />
+    <string name="contact_us">contact us</string>
+    <string name="signout" />
+    <string name="donate_now">donate now</string>
+    <string name="helpline_no">helpline no.</string>
+    <string name="locate_centers">locate centers</string>
+    <string name="safety_measures">Safety Measures</string>
+    <string name="does_and_dont_s">Does and Dont\'s</string>
+    <string name="hello">Hello</string>
+    <string name="singing_out" />
+    <string name="signing_out" />
+    <string name="register_new_user">Register new user?</string>
+    <string name="logout">Logout!</string>
+</resources>

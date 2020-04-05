@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.covid19_mah.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.covid19_mah.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_symptoms"
+        android:name="com.example.covid19_mah.ui.symptoms"
+        android:label="@string/symptoms"
+        tools:layout="@layout/symptoms_fragment" />
+
+    <fragment
+        android:id="@+id/nav_doesanddonts"
+        android:name="com.example.covid19_mah.ui.doesanddonts"
+        android:label="@string/does_and_dont_s"
+        tools:layout="@layout/doesanddonts_fragment" />
+    <fragment
+        android:id="@+id/nav_safetymeasures"
+        android:name="com.example.covid19_mah.ui.safetymeasures"
+        android:label="@string/safety_measures"
+        tools:layout="@layout/safetymeasures_fragment" />
+    <fragment
+        android:id="@+id/nav_locatecenters"
+        android:name="com.example.covid19_mah.ui.locatecenters"
+        android:label="@string/locate_centers"
+        tools:layout="@layout/locatecenters_fragment" />
+    <fragment
+        android:id="@+id/nav_helpline"
+        android:name="com.example.covid19_mah.ui.helpline"
+        android:label="helpline no"
+        tools:layout="@layout/helpline_fragment" />
+    <fragment
+        android:id="@+id/nav_donate"
+        android:name="com.example.covid19_mah.ui.donate"
+        android:label="@string/donate_now"
+        tools:layout="@layout/donate_fragment" />
+    <fragment
+        android:id="@+id/nav_signout"
+        android:name="com.example.covid19_mah.ui.signout"
+        android:label="@string/signout"
+        tools:layout="@layout/signout_fragment" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.covid19_mah.ui.contact"
+        android:label="@string/contact_us"
+        tools:layout="@layout/contact_fragment" />
+</navigation>
