@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,8 +16,21 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.covid19_mah.R;
 
 public class HomeFragment extends Fragment {
+    public HomeFragment(){}
 
-    private HomeViewModel homeViewModel;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState){
+
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        WebView heroespage = (WebView) rootView.findViewById(R.id.hom);
+        heroespage.loadUrl("file:///android_asset/home.htm");
+        return rootView;
+    }
+}
+//}
+
+ /*   private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -32,4 +46,4 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
-}
+}*/

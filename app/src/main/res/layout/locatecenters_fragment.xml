@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/locate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.locatecenters">
 
-    <TextView
+    <WebView
+        android:id="@+id/locatecenters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        tools:layout_editor_absoluteX="1dp"></WebView>
 
-</FrameLayout>
+</RelativeLayout>

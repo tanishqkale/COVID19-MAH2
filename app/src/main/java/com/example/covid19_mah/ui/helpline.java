@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ListView;
 import android.os.Bundle;
 import android.view.View;
@@ -28,32 +29,51 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import  android.webkit.WebView;
+import android.widget.TextView;
 
 import com.example.covid19_mah.R;
 
 
 public class helpline extends Fragment {
-
-    private HelplineViewModel mViewModel;
-
-    public static helpline newInstance() {
-        return new helpline();
-    }
-
-ListView listView;
+    public helpline(){}
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.helpline_fragment, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState){
+
+        View rootView = inflater.inflate(R.layout.symptoms_fragment, container, false);
+        WebView heroespage = (WebView) rootView.findViewById(R.id.symptoms);
+        heroespage.loadUrl("file:///android_asset/helpline.htm");
+        return rootView;
     }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(HelplineViewModel.class);
-        // TODO: Use the ViewModel
-
-    }
-
 }
+//}
+
+
+
+ //   private HelplineViewModel mViewModel;
+
+  //  public static helpline newInstance() {
+   //     return new helpline();
+ //   }
+
+//ListView listView;
+ //   @Override
+ //   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+  //                           @Nullable Bundle savedInstanceState) {
+
+  //      View v =inflater.inflate(R.layout.helpline_fragment, container, false);
+//
+  //      return inflater.inflate(R.layout.helpline_fragment, container, false);
+ //   }
+
+  //  @Override
+    //public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+   //     super.onActivityCreated(savedInstanceState);
+   //     mViewModel = ViewModelProviders.of(this).get(HelplineViewModel.class);
+   //     // TODO: Use the ViewModel
+
+  //  }
+
+//}

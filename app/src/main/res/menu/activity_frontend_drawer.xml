@@ -28,35 +28,7 @@
             android:id="@+id/nav_helpline"
             android:icon="@drawable/ic_helpline"
             android:title="helpline_no" />
-        <item
-            android:id="@+id/nav_donate"
-            android:icon="@drawable/ic_donate"
-            android:title="@string/donate_now" />
-        <item
-            android:id="@+id/nav_signout"
-            android:icon="@drawable/ic_signout"
-            android:title="signout" />
-        <item
-            android:id="@+id/nav_contact"
-            android:icon="@drawable/ic_contact"
-            android:title="@string/contact_us" />
+
     </group>
 
-    <item android:title="communicate">
-        <menu>
-            <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_share"
-            android:title="Share">
-
-            </item>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_send"
-                android:title="send">
-
-            </item>
-
-        </menu>
-    </item>
 </menu>

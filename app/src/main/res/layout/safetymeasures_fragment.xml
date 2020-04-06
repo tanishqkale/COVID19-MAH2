@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.safetymeasures">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+    <ImageView
+        android:id="@+id/protectivemeasures"
+        android:layout_width="415dp"
+        android:layout_height="795dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/protectivemeasures"></ImageView>
 
 </FrameLayout>
